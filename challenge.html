@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript on Steroid</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+	<div class="container-1">
+		<h2>Challenge 1 : Your age in days</h2>
+		<div class="flex-box-container-1">
+			<div>
+				<button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+			</div>
+			<div>
+				<button class="btn btn-danger" onclick="reset()">Reset</button>
+			</div>
+		</div>
+		<div class="flex-box-container-1">
+			<div id="flex-box-result"></div>
+		</div>
+	</div>
+	<div class="container-2">
+		<h2>Challange 2 : Cat Generator</h2>
+		<button class="btn btn-success" id="cat-gen-button" onclick="generateCat()">GENERATE CAT</button>
+		<button class="btn btn-warning" id="cat-gen-button" onclick="delete_img()">DELETE IMAGE</button>
+
+		<div class="flex-box-container-2" id="flex-gen-cat">
+			<!-- <img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm">
+			<img src="https://cdn2.thecatapi.com/images/cuo.gif" alt="" style="max-height: 8cm;max-width: 8cm"> -->
+		</div>
+		</div>
+	</div>
+	<div class="container-3">
+		<h2>Challenge 2 : Rock, Papper, Scissors</h2>
+		<div class="flex-box-rps" id="flex-box-rps-div">
+			<img id="rock" src="https://i.pinimg.com/originals/ad/e6/7c/ade67c8918f7404a17294f04620a661a.png" width="150px" height="150px" alt="" onclick="rpsGame(this)">
+			<img id="paper" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eaa3370a-87a0-44f8-917d-7712368e1d9c/d9cmivx-e49ceec8-1888-4fd6-b6cc-25a58de08ab3.png/v1/fill/w_1024,h_1326,strp/sheet_of_notebook_paper_stock_by_separate_the_earth_d9cmivx-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMzI2IiwicGF0aCI6IlwvZlwvZWFhMzM3MGEtODdhMC00NGY4LTkxN2QtNzcxMjM2OGUxZDljXC9kOWNtaXZ4LWU0OWNlZWM4LTE4ODgtNGZkNi1iNmNjLTI1YTU4ZGUwOGFiMy5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vXEjiNJqs2ozHHne_oZdHGw-Y-9WP8A-20h1uo2gKE8" width="150px" height="150px" alt="" onclick="rpsGame(this)">
+			<img id="scissors" src="https://cdn.pixabay.com/photo/2017/02/01/12/13/grip-2030010_1280.png" max-width="150px" height="150px" alt="" onclick="rpsGame(this)">
+		</div>
+	</div>
+
+	<div class="container-4">
+		<h2>Change the color all of All Button</h2>
+
+		<div class="flex-box-pick-color">
+			<form action="">
+				<select name="backdrop" id="background" onchange="buttonColorChange(this)">
+					<option value="random">Random</option>
+					<option value="red">Red</option>
+					<option value="green">Green</option>
+					<option value="reset">Reset</option>
+				</select>
+			</form>
+			<button class="btn btn-primary">Wee!</button>
+			<button class="btn btn-danger">Yahoo!</button>
+			<button class="btn btn-warning">Google!</button>
+			<button class="btn btn-success">Facebook!</button>
+		</div>
+	</div>
+<script src="static/js/script.js"></script>
+</body>
+</html>
