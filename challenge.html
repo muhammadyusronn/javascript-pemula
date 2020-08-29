@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<div class="container-3">
-		<h2>Challenge 2 : Rock, Papper, Scissors</h2>
+		<h2>Challenge 3 : Rock, Papper, Scissors</h2>
 		<div class="flex-box-rps" id="flex-box-rps-div">
 			<img id="rock" src="https://i.pinimg.com/originals/ad/e6/7c/ade67c8918f7404a17294f04620a661a.png" width="150px" height="150px" alt="" onclick="rpsGame(this)">
 			<img id="paper" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eaa3370a-87a0-44f8-917d-7712368e1d9c/d9cmivx-e49ceec8-1888-4fd6-b6cc-25a58de08ab3.png/v1/fill/w_1024,h_1326,strp/sheet_of_notebook_paper_stock_by_separate_the_earth_d9cmivx-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMzI2IiwicGF0aCI6IlwvZlwvZWFhMzM3MGEtODdhMC00NGY4LTkxN2QtNzcxMjM2OGUxZDljXC9kOWNtaXZ4LWU0OWNlZWM4LTE4ODgtNGZkNi1iNmNjLTI1YTU4ZGUwOGFiMy5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vXEjiNJqs2ozHHne_oZdHGw-Y-9WP8A-20h1uo2gKE8" width="150px" height="150px" alt="" onclick="rpsGame(this)">
@@ -48,7 +48,7 @@
 	</div>
 
 	<div class="container-4">
-		<h2>Change the color all of All Button</h2>
+		<h2>Change  4 :the color all of All Button</h2>
 
 		<div class="flex-box-pick-color">
 			<form action="">
@@ -63,6 +63,42 @@
 			<button class="btn btn-danger">Yahoo!</button>
 			<button class="btn btn-warning">Google!</button>
 			<button class="btn btn-success">Facebook!</button>
+		</div>
+	</div>
+
+	<div class="container-5">
+		<h2>Challenge 5 : Blackjack</h2>
+		<h3>
+			<span id="blackjack-result">Let's Play</span>
+		</h3>
+		<div class="flex-blackjack-row1">
+			<div id="your-box">
+				<h2>YOU : <span id="your-blackjack-result">0</span></h2>
+			</div>
+			<div id="dealer-box">
+				<h2>Dealer : <span id="dealer-blackjack-result">0</span></h2>
+			</div>
+		</div>
+		<div class="flex-blackjack-row2">
+			<div>
+				<button class="btn-lg btn btn-primary mr-2" id="blackjack-hit-button">HIT</button>
+				<button class="btn-lg btn btn-warning mr-2" id="blackjack-stand-button">STAND</button>
+				<button class="btn-lg btn btn-danger mr-2" id="blackjack-deal-button">DEAL</button>
+			</div>
+		</div>
+		<div class="flex-blackjack-row3">
+			<table>
+				<tr>
+					<th>Wins</th>
+					<th>Losses</th>
+					<th>Draws</th>
+				</tr>
+				<tr>
+					<td><span id="wins">0</span></td>
+					<td><span id="losses">0</span></td>
+					<td><span id="draws">0</span></td>
+				</tr>
+			</table>
 		</div>
 	</div>
 <script src="static/js/script.js"></script>
